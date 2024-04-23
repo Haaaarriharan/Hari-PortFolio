@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { Heros } from "./canvas";
 import StarWrapper from "../hoc/SectionWrapper";
+import image from "../assets/moon.png";
+import styled from "styled-components";
 
 const Hero = () => {
   return (
@@ -26,7 +28,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <Heros />
+      <div style={{ overflowX: "hidden", marginLeft: "100px" }}>
+        <Heros />
+      </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

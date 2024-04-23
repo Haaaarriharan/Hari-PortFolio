@@ -16,7 +16,6 @@ import image from "../../assets/moon.png";
 const Container = styled.div`
   height: 600px;
   width: 100%;
-  margin-left: 300px;
 `;
 
 const Left = styled.div`
@@ -85,10 +84,8 @@ const Img = styled.img`
   right: 0;
   margin: auto;
   animation: animate 2s infinite ease alternate;
-
   @media only screen and (max-width: 768px) {
     bottom: -100;
-
     width: 300px;
     height: 300px;
   }
@@ -96,11 +93,11 @@ const Img = styled.img`
   @media only screen and (min-width: 1700px) {
     width: 800px;
     height: 600px;
-    }
+  }
 
   @keyframes animate {
     to {
-      transform: translateY(20px);
+      transform: translateY(40px);
     }
   }
 `;
@@ -108,25 +105,29 @@ const Img = styled.img`
 const Hero = () => {
   return (
     // <Section>
+    // <Container>
+    //   {/* <Right> */}
+    //   <Canvas>
+    //     <Suspense fallback={null}>
+    //       <OrbitControls enableZoom={false} />
+    //       <ambientLight intensity={1} />
+    //       <directionalLight position={[3, 2, 1]} />
+    //       <Sphere args={[1, 100, 200]} scale={2.4}>
+    //         <MeshDistortMaterial
+    //           color="#3d1c56"
+    //           attach="material"
+    //           distort={0.5}
+    //           speed={2}
+    //         />
+    //       </Sphere>
+    //     </Suspense>
+    //   </Canvas>
+
+    // </Container>
     <Container>
-      {/* <Right> */}
-      <Canvas>
-        <Suspense fallback={null}>
-          <OrbitControls enableZoom={false} />
-          <ambientLight intensity={1} />
-          <directionalLight position={[3, 2, 1]} />
-          <Sphere args={[1, 100, 200]} scale={2.4}>
-            <MeshDistortMaterial
-              color="#3d1c56"
-              attach="material"
-              distort={0.5}
-              speed={2}
-            />
-          </Sphere>
-        </Suspense>
-      </Canvas>
-      <Img src={image} />
-      {/* </Right> */}
+      <div>
+        <Img src={image} />
+      </div>
     </Container>
     // </Section>
   );

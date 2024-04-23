@@ -11,6 +11,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import Design from "./components/design";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Design />
         <Experience />
         <Tech />
         <Works />
