@@ -14,6 +14,7 @@ import {
 import Design from "./components/design";
 
 const App = () => {
+  console.log();
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-black">
