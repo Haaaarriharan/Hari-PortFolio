@@ -168,7 +168,7 @@ const experiences = [
     project_name: "Goldi's",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2024 - May 2024",
     points: [
       "Design, develop, and maintain software applications, websites, or systems according to project requirements and industry best practices.",
       "Write clean, efficient, and maintainable code using programming languages such as JavaScript, Python or others, depending on the project's requirements.",
