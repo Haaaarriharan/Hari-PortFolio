@@ -14,7 +14,7 @@ import image from "../../assets/moon.png";
 // `;
 
 const Container = styled.div`
-  height: 600px;
+  height: 100vh;
   width: 100%;
 `;
 
@@ -76,13 +76,7 @@ const Button = styled.button`
 const Img = styled.img`
   width: 800px;
   height: 500px;
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 100;
-  right: 0;
-  margin: auto;
+  object-fit: cover;
   animation: animate 2s infinite ease alternate;
   @media only screen and (max-width: 768px) {
     bottom: -100;

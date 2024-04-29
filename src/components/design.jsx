@@ -5,18 +5,13 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import StarWrapper from "../hoc/SectionWrapper";
 
 function Design() {
-  const Container = styled.div`
-    height: 600px;
-    width: 100%;
-  `;
   return (
     <div
       style={{
-        height: "600px",
+        height: "100vh",
         width: "100%",
       }}
     >
-      {/* <Right> */}
       <Canvas>
         <Suspense fallback={null}>
           <OrbitControls enableZoom={false} />
